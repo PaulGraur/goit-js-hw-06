@@ -25,5 +25,3 @@ const changeColor = () => {
 }
 
 colorBtn.addEventListener(`click`, changeColor);
-
-

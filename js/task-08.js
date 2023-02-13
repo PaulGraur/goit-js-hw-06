@@ -41,7 +41,6 @@ function submitHandler(event) {
         prof.password = password.value;
 
         console.log(prof);
+        event.currentTarget.reset();
     }
-
-    event.currentTarget.reset();
 }

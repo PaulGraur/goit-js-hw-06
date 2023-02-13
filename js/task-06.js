@@ -27,8 +27,17 @@
 const inputEl = document.getElementById('validation-input');
 inputEl.addEventListener('blur', onBlurBorderColor);
 
+// const inputLen = inputEl.dataset.value.length;
+//
+// const onBlur = ({ target: { value }}) => {
+//     if (!value.length) return inputEl.classList = '';
+//     inputEl.classList = value.length === inputLen ? 'valid' : 'invalid';
+// };
+
 function onBlurBorderColor(event) {
+
     let inputValue = event.currentTarget.value.trim();
+
     if (inputValue.length === Number(inputEl.dataset.length)) {
         inputEl.classList.add('valid');
         inputEl.classList.remove('invalid');
